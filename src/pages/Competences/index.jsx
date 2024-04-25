@@ -1,14 +1,14 @@
 import React from "react";
 
-function Home() {
+function Competences() {
   return (
     <main>
-      <div className="Presentation">
-        <h1 className="title">PRESENTATION</h1>
+      <div className="Competences">
+        <h1 className="title">COMPETENCES</h1>
         <div className="information">Blabla blabla bla ....</div>
       </div>
     </main>
   );
 }
 
-export default Home;
+export default Competences;

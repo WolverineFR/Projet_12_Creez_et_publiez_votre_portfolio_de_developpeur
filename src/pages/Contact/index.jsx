@@ -1,14 +1,14 @@
 import React from "react";
 
-function Home() {
+function Contact() {
   return (
     <main>
-      <div className="Presentation">
-        <h1 className="title">PRESENTATION</h1>
+      <div className="Contact">
+        <h1 className="title">CONTACT</h1>
         <div className="information">Blabla blabla bla ....</div>
       </div>
     </main>
   );
 }
 
-export default Home;
+export default Contact;
