@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* Police du logo (Shrikhand) */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Police du site (Popins) */
+
+
+// couleur principales du site
+$primary-color: #EDEDED;
+$secondary-color: #131313;
+$text-color: #333333;
+
+//Les underlines
+@mixin underLineTitle {
+  height: 10px;
+  width: 139px;
+  background-color: #303030;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    width: 240px;
+  }
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* HEADER */
+.Header {
+  max-width: 1440px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+
+  .logo {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $text-color;
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 30px;
+  }
+
+  .Navigation-Box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      height: auto;
+      padding: 10px 14px 10px 14px;
+
+
+      &:hover {
+        transition: 0.3s ease-in-out;
+        background-color: #333333;
+        color: white;
+      }
+    }
+  }
+}
+
+
+/* PRESENTATION */
+
+.Presentation {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  justify-content: center;
+
+  .TitleBox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 160px;
+    padding-bottom: 50px;
+    width: 40%;
+
+    .Title {
+      font-weight: 200;
+      font-style: italic;
+      font-size: 48px;
+      color: $text-color;
+    }
+
+    .UnderlineTitle {
+      @include underLineTitle;
+    }
+  }
+
+  .Information {
+    font-size: 36px;
+    font-weight: 200;
+    padding-left: 360px;
+    text-align: center;
+    color: $text-color;
+  }
+}
+
+
+
+/* A PROPOS */
+
+.InformationBox {
+  display: flex;
+
+  .ProfilePicture {
+    width: 540px;
+    height: 540px;
+  }
+}
+
+
+
+
+
+.footer {
+  max-width: 1440px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* ERREUR 404 */
+.ErrorBox {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  gap: 30px;
+
+  h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 96px;
+    text-align: center;
+  }
+
+  .Information {
+    font-size: 24px;
+    width: 55%;
+    text-align: center;
+
+    a {
+      font-family: "Shrikhand", serif;
+      font-size: 32px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* ANIMATIONS ET EFFETS */
+// @keyframes stretchBar {
+//   from {
+//     width: 139px;
+//   }
+
+//   to {
+//     width: 240px;
+//   }
+// }

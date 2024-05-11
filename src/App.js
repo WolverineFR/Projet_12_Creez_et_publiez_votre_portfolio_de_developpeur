@@ -9,6 +9,7 @@ import Apropos from "./pages/Apropos";
 import Realisation from "./pages/Realisation";
 import Competences from "./pages/Competences";
 import Contact from "./pages/Contact";
+import Erreur404 from "./pages/Erreur404";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Realisation" element={<Realisation />} />
         <Route path="/Competences" element={<Competences />} />
         <Route path="/Contact" element={<Contact />} />
+        <Route path="*" element={<Erreur404 />} />
       </Routes>
       <Footer />
     </Router>
