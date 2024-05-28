@@ -52,10 +52,11 @@ main {
   height: 100%;
   width: 100%;
   background-color: $primary-color;
+  min-height: calc(100vh - 100px);
 }
 
 #root {
-  // height: 100vh; pose probleme quand la page est grande
+  min-height: 100vh;
 }
 
 a {
