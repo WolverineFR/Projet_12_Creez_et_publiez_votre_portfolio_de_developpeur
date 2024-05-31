@@ -9,9 +9,11 @@ function Apropos() {
     <main>
       <div className="AproposSection">
         <div className="PresentationApropos">
-          <div className="TitleBox">
-            <h1 className="Title">A propos de moi</h1>
-            <div className="UnderlineTitle"></div>
+          <div className="TitleBox1">
+            <div className="TitleBox2">
+              <h1 className="Title">A propos de moi</h1>
+              <div className="UnderlineTitle"></div>
+            </div>
           </div>
           <div className="InformationBox">
             <div className="InformationApropos">

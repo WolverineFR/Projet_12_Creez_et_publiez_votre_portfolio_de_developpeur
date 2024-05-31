@@ -4,9 +4,11 @@ function Home() {
   return (
     <main>
       <div className="Presentation">
-        <div className="TitleBox">
-          <h1 className="Title">Présentation</h1>
-          <div className="UnderlineTitle"></div>
+        <div className="TitleBox1">
+          <div className="TitleBox2">
+            <h1 className="Title">Présentation</h1>
+            <div className="UnderlineTitle"></div>
+          </div>
         </div>
         <div className="Information">
           Bienvenue sur mon site de présentation de mon portfolio développeur.
