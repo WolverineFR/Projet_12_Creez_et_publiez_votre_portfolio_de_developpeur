@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import PropTypes from "prop-types";
 import ChevronLeft from "../../assets/chevron-left.png";
 import ChevronRight from "../../assets/chevron-right.png";
@@ -8,8 +8,15 @@ const Slider = ({ data }) => {
 
   const prev = () =>
     setCurr((curr) => (curr === 0 ? data.length - 1 : curr - 1));
-  const next = () =>
+  const next = useCallback(() => {
     setCurr((curr) => (curr === data.length - 1 ? 0 : curr + 1));
+  }, [data.length]);
+
+  useEffect(() => {
+    const interval = setInterval(next, 5000);
+
+    return () => clearInterval(interval);
+  }, [next]);
 
   return (
     <div className="CarrouselBox">
@@ -29,7 +36,13 @@ const Slider = ({ data }) => {
           <img className="Chevrons" src={ChevronRight} alt="Droite"></img>
         </button>
       </div>
-      <div></div>
+      <div className="DotBox">
+        <div className="Dots">
+          {data.map((_, i) => (
+            <div className={`dot ${curr === i ? "selected" : ""}`}></div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

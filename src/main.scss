@@ -370,7 +370,7 @@ code {
   .CarrouselBox {
     width: 100%;
     max-width: 1440px;
-    margin-top: 150px;
+    margin-top: 40px;
     margin-bottom: 150px;
     display: flex;
     overflow: hidden;
@@ -381,6 +381,7 @@ code {
     .CarrouselImg {
       object-fit: cover;
       max-width: 1440px;
+      width: 100%;
       transition: ease-in-out 500ms;
     }
 
@@ -414,6 +415,33 @@ code {
       }
     }
 
+    .DotBox {
+      position: absolute;
+      bottom: 30px;
+      right: 0;
+      left: 0;
+
+      .Dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+
+        .dot {
+          transition: all;
+          background-color: rgb(0 0 0 / 20%);
+          width: 15px;
+          height: 15px;
+          border-radius: 100%;
+
+        }
+
+        .selected {
+          background-color: #8d8d8d;
+
+        }
+      }
+    }
   }
 }
 
