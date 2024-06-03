@@ -1,5 +1,5 @@
 import React from "react";
-import Carrousel from "../../components/Carrousel/";
+import Slider from "../../components/Slider/";
 import Projets from "../../data/projets.json";
 
 function Realisations() {
@@ -12,11 +12,10 @@ function Realisations() {
             <div className="UnderlineTitle"></div>
           </div>
         </div>
-        <Carrousel images={Projets} />
+        <Slider data={Projets} />
       </div>
     </main>
   );
 }
 
-console.log(Projets[0].picture);
 export default Realisations;
