@@ -96,7 +96,7 @@ code {
 
     a {
       height: auto;
-      padding: 10px 14px 10px 14px;
+      padding: 13px 14px 12px 14px;
 
 
       &:hover {
@@ -105,7 +105,14 @@ code {
         color: white;
       }
     }
+
+    .active {
+      background-color: #333333;
+      color: white;
+    }
   }
+
+
 }
 
 // FOOTER
@@ -488,6 +495,8 @@ code {
         justify-content: center;
 
         .cat {
+          border: none;
+          background-color: #ffffff00;
           padding: 10px 14px 10px 14px;
           font-weight: 200;
           font-size: 20px;
@@ -498,6 +507,11 @@ code {
             background-color: #333333;
             color: white;
           }
+        }
+
+        .Selected {
+          background-color: #333333;
+          color: white;
         }
       }
     }

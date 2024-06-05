@@ -1,13 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Slider from "../../components/Slider/";
 import Projets from "../../data/projets.json";
 import Card from "../../components/Card";
 
 function Realisations() {
-  // const [selectedFilters, setSelectedFilters] = useState([]);
-  // const [filteredItems, setFilteredItems] = useState(items);
+  const [selectedCategory, setSelectedCategory] = useState("Tous");
 
-  // let filters = [Projets.langages];
+  const filterProjects = () => {
+    if (selectedCategory === "Tous") {
+      return Projets;
+    }
+    return Projets.filter((project) =>
+      project.langages.includes(selectedCategory)
+    );
+  };
+
+  const categoryClick = (category) => {
+    setSelectedCategory(category);
+  };
+  const getCategoryButtonClass = (category) => {
+    return category === selectedCategory ? "cat Selected" : "cat";
+  };
+
+  const filteredProjects = filterProjects();
 
   return (
     <main>
@@ -26,14 +41,34 @@ function Realisations() {
               <div className="UnderlineTitle"></div>
             </div>
             <div className="CategoriesBox">
-              <div className="cat Tous">Tous</div>
-              <div className="cat HtmlCss">HTML/CSS</div>
-              <div className="cat JavaScript">JavaScript</div>
-              <div className="cat React">React</div>
+              <button
+                onClick={() => categoryClick("Tous")}
+                className={getCategoryButtonClass("Tous")}
+              >
+                Tous
+              </button>
+              <button
+                onClick={() => categoryClick("HTML/CSS")}
+                className={getCategoryButtonClass("HTML/CSS")}
+              >
+                HTML/CSS
+              </button>
+              <button
+                onClick={() => categoryClick("JavaScript")}
+                className={getCategoryButtonClass("JavaScript")}
+              >
+                JavaScript
+              </button>
+              <button
+                onClick={() => categoryClick("React")}
+                className={getCategoryButtonClass("React")}
+              >
+                React
+              </button>
             </div>
           </div>
           <div className="ProjetsBox">
-            {Projets.map((data) => (
+            {filteredProjects.map((data) => (
               <Card key={data.id} data={data} />
             ))}
           </div>

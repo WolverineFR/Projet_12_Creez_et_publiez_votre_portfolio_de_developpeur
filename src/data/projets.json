@@ -3,49 +3,49 @@
     "id": "1",
     "title": "Oh my food",
     "picture": "http://localhost:3000/images/OhMyFood.jpg",
-    "langages": ["HTML", "CSS"],
+    "langages": ["HTML/CSS"],
     "lien": "https://github.com/WolverineFR/Oh_my_food-Projet_4"
   },
   {
     "id": "2",
     "title": "Print It",
     "picture": "http://localhost:3000/images/PrintIt.jpg",
-    "langages": ["HTML", "CSS", "JavaScript"],
+    "langages": ["HTML/CSS", "JavaScript"],
     "lien": "https://github.com/WolverineFR/Print-it-JS-main_Projet-5"
   },
   {
     "id": "3",
     "title": "Sophie Bluel",
     "picture": "http://localhost:3000/images/SophieBluel.jpg",
-    "langages": ["HTML", "CSS", "JavaScript"],
+    "langages": ["HTML/CSS", "JavaScript"],
     "lien": "https://github.com/WolverineFR/Portfolio_architecte_Sophie_bluel_master_Projet_6"
   },
   {
     "id": "4",
     "title": "Kasa",
     "picture": "http://localhost:3000/images/Kasa.jpg",
-    "langages": ["HTML", "CSS", "JavaScript", "React"],
+    "langages": ["HTML/CSS", "JavaScript", "React"],
     "lien": "https://github.com/WolverineFR/projet_8_kasa"
   },
   {
     "id": "5",
     "title": "Nina Carducci",
     "picture": "http://localhost:3000/images/NinaCarducci.jpg",
-    "langages": ["HTML", "CSS", "JavaScript"],
+    "langages": ["HTML/CSS", "JavaScript"],
     "lien": "https://github.com/WolverineFR/Projet_9_Nina_Carducci"
   },
   {
     "id": "6",
     "title": "724 Events",
     "picture": "http://localhost:3000/images/724Events.jpg",
-    "langages": ["HTML", "CSS", "JavaScript", "React"],
+    "langages": ["HTML/CSS", "JavaScript", "React"],
     "lien": "https://github.com/WolverineFR/Projet_10_Debuggez-une-application-React.JS-main"
   },
   {
     "id": "7",
     "title": "Argent Bank",
     "picture": "http://localhost:3000/images/ArgentBank.jpg",
-    "langages": ["HTML", "CSS", "JavaScript", "React"],
+    "langages": ["HTML/CSS", "JavaScript", "React"],
     "lien": "https://github.com/WolverineFR/Projet_11_Implementez_le-front-end_d_une_application_bancaire_avec_React"
   }
 ]
