@@ -4,48 +4,62 @@
     "title": "Oh my food",
     "picture": "http://localhost:3000/images/OhMyFood.jpg",
     "langages": ["HTML/CSS"],
-    "lien": "https://github.com/WolverineFR/Oh_my_food-Projet_4"
+    "lien": "https://github.com/WolverineFR/Oh_my_food-Projet_4",
+    "description": "Développement d'un site \"mobile first\" qui répertorie les menus d'un restaurant.",
+    "competences": "Compétences: Animation CSS, HTML."
   },
   {
     "id": "2",
     "title": "Print It",
     "picture": "http://localhost:3000/images/PrintIt.jpg",
     "langages": ["HTML/CSS", "JavaScript"],
-    "lien": "https://github.com/WolverineFR/Print-it-JS-main_Projet-5"
+    "lien": "https://github.com/WolverineFR/Print-it-JS-main_Projet-5",
+    "description": "Dynamiser un site statique avec JavaScript.",
+    "competences": "Compétences: Utilisation de Javascript."
   },
   {
     "id": "3",
     "title": "Sophie Bluel",
     "picture": "http://localhost:3000/images/SophieBluel.jpg",
     "langages": ["HTML/CSS", "JavaScript"],
-    "lien": "https://github.com/WolverineFR/Portfolio_architecte_Sophie_bluel_master_Projet_6"
+    "lien": "https://github.com/WolverineFR/Portfolio_architecte_Sophie_bluel_master_Projet_6",
+    "description": "Conception d'un portfolio avec page de connexion et possibilité d'ajouter ou supprimer des travaux.",
+    "competences": "Compétences: Utilisation d'API, Javascript."
   },
   {
     "id": "4",
     "title": "Kasa",
     "picture": "http://localhost:3000/images/Kasa.jpg",
     "langages": ["HTML/CSS", "JavaScript", "React"],
-    "lien": "https://github.com/WolverineFR/projet_8_kasa"
+    "lien": "https://github.com/WolverineFR/projet_8_kasa",
+    "description": "Création d'un site de location immobiliere avec React.",
+    "competences": "Compétences: React, utilisation d'API."
   },
   {
     "id": "5",
     "title": "Nina Carducci",
     "picture": "http://localhost:3000/images/NinaCarducci.jpg",
     "langages": ["HTML/CSS", "JavaScript"],
-    "lien": "https://github.com/WolverineFR/Projet_9_Nina_Carducci"
+    "lien": "https://github.com/WolverineFR/Projet_9_Nina_Carducci",
+    "description": "Optimisation du referencement d'un site de photographe.",
+    "competences": "Compétences: Green coding, optimisation SEO et accessibilité, amélioration des performances."
   },
   {
     "id": "6",
     "title": "724 Events",
     "picture": "http://localhost:3000/images/724Events.jpg",
     "langages": ["HTML/CSS", "JavaScript", "React"],
-    "lien": "https://github.com/WolverineFR/Projet_10_Debuggez-une-application-React.JS-main"
+    "lien": "https://github.com/WolverineFR/Projet_10_Debuggez-une-application-React.JS-main",
+    "description": "Correction de bugs d'un site web d'évènementielle.",
+    "competences": "Compétences: Utilisation de React developer tools, réparation des bugs, rédaction du cahier de recette."
   },
   {
     "id": "7",
     "title": "Argent Bank",
     "picture": "http://localhost:3000/images/ArgentBank.jpg",
     "langages": ["HTML/CSS", "JavaScript", "React"],
-    "lien": "https://github.com/WolverineFR/Projet_11_Implementez_le-front-end_d_une_application_bancaire_avec_React"
+    "lien": "https://github.com/WolverineFR/Projet_11_Implementez_le-front-end_d_une_application_bancaire_avec_React",
+    "description": "Mettre en place un systeme d'authentification pour un site bancaire en utilisant Redux pour le state de l'app.",
+    "competences": "Compétences: Mise en place de React, utilisation de Redux."
   }
 ]

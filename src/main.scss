@@ -529,6 +529,27 @@ code {
         height: 380px;
         border-radius: 10px;
         position: relative;
+        overflow: hidden;
+
+        &:hover .DescriptionCompetenceBox {
+          margin-top: 0;
+        }
+
+        .DescriptionCompetenceBox {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          gap: 15px;
+          font-size: 18px;
+          position: absolute;
+          width: 100%;
+          background-color: #131313d4;
+          color: white;
+          padding: 15px 0 10px 10px;
+          margin-top: -46%;
+          transition: margin-top 0.3s ease-in-out;
+
+        }
 
         .cardImg {
           object-fit: cover;

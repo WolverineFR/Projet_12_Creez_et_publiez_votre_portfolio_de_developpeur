@@ -1,6 +1,4 @@
 import React from "react";
-// import { useSelector } from "react-redux";
-// import { Navigate } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
