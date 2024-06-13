@@ -1,9 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Contact() {
+  const [formData, setFormData] = useState({
+    lastname: "",
+    firstname: "",
+    email: "",
+    title: "",
+    message: "",
+  });
+
+  const [open, setOpen] = useState(false);
+
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const validEmail = (email) => {
+    const emailValidator = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailValidator.test(email);
+  };
+
+  const alertMessage = (e) => {
+    e.preventDefault();
+
+    const { lastname, firstname, email, title, message } = formData;
+
+    if (lastname && firstname && email && title && message) {
+      if (validEmail(email)) {
+        setOpen(true);
+        setErrorMessage("");
+
+        setTimeout(() => {
+          setOpen(false);
+        }, 3000);
+      } else {
+        setErrorMessage("Veuillez entrer une adresse e-mail valide.");
+      }
+    } else {
+      setErrorMessage("Tous les champs de saisie doivent être remplis !");
+    }
+  };
   return (
     <main>
       <div className="ContactPage">
+        {open && (
+          <div className="AlerteBox">
+            <div className="AlerteText">Votre message s'est bien envoyé !</div>
+          </div>
+        )}
         <div className="TitleBox1">
           <div className="TitleBox2">
             <h1 className="Title">Contact</h1>
@@ -18,30 +68,68 @@ function Contact() {
           <div className="TitleForm">
             Vous pouvez remplir le formulaire ci dessous
           </div>
-          <form action="#" method="post">
+          <form onSubmit={alertMessage}>
             <div className="FirstAndLastName">
               <div className="LastNameBox">
-                <label for="lastname">Nom</label>
-                <input type="text" name="lastname" id="lastname"></input>
+                <label htmlFor="lastname">Nom*</label>
+                <input
+                  type="text"
+                  name="lastname"
+                  id="lastname"
+                  value={formData.lastname}
+                  onChange={handleChange}
+                  required
+                ></input>
               </div>
               <div className="FirstNameBox">
-                <label for="firstname">Prenom</label>
-                <input type="text" name="firstname" id="firstname"></input>
+                <label htmlFor="firstname">Prenom*</label>
+                <input
+                  type="text"
+                  name="firstname"
+                  id="firstname"
+                  value={formData.firstname}
+                  onChange={handleChange}
+                  required
+                ></input>
               </div>
             </div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email"></input>
-            <label for="title">Sujet</label>
-            <input type="title" name="title" id="title"></input>
-            <label for="message">Message</label>
+            <label htmlFor="email">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            ></input>
+            <label htmlFor="title">Sujet*</label>
+            <input
+              type="title"
+              name="title"
+              id="title"
+              value={formData.title}
+              onChange={handleChange}
+              required
+            ></input>
+            <label for="message">Message*</label>
             <textarea
               name="message"
               id="message"
               cols="30"
               rows="10"
+              value={formData.message}
+              onChange={handleChange}
+              required
             ></textarea>
+            <p className="required">* champs obligatoire</p>
+            {errorMessage && <p className="errorMessage">{errorMessage}</p>}
             <div className="btnBox">
-              <input type="submit" value="Envoyer" id="submitBtn"></input>
+              <input
+                onClick={alertMessage}
+                type="submit"
+                value="Envoyer"
+                id="submitBtn"
+              ></input>
             </div>
           </form>
         </div>
