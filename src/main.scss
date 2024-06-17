@@ -64,6 +64,13 @@ a {
   color: $text-color;
 }
 
+h1 {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 48px;
+  color: $text-color;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -147,13 +154,6 @@ code {
       flex-direction: column;
       padding-bottom: 58px;
 
-      .Title {
-        font-weight: 200;
-        font-style: italic;
-        font-size: 48px;
-        color: $text-color;
-      }
-
       .UnderlineTitle {
         @include underLineTitle;
       }
@@ -200,12 +200,6 @@ code {
         flex-direction: column;
         padding-bottom: 30px;
 
-        .Title {
-          font-weight: 200;
-          font-style: italic;
-          font-size: 48px;
-          color: $text-color;
-        }
 
         .UnderlineTitle {
           @include underLineTitle;
@@ -361,12 +355,7 @@ code {
       flex-direction: column;
       padding-bottom: 30px;
 
-      .Title {
-        font-weight: 200;
-        font-style: italic;
-        font-size: 48px;
-        color: $text-color;
-      }
+
 
       .UnderlineTitle {
         @include underLineTitle;
@@ -472,12 +461,8 @@ code {
         align-items: center;
         flex-direction: column;
 
-
         .Title {
-          font-weight: 200;
-          font-style: italic;
-          font-size: 48px;
-          color: $text-color;
+          font-weight: 200
         }
 
         .UnderlineTitle {
@@ -493,6 +478,8 @@ code {
       .CategoriesBox {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
 
         .cat {
           border: none;
@@ -620,12 +607,6 @@ code {
       flex-direction: column;
       padding-bottom: 30px;
 
-      .Title {
-        font-weight: 200;
-        font-style: italic;
-        font-size: 48px;
-        color: $text-color;
-      }
 
       .UnderlineTitle {
         @include underLineTitle;
@@ -771,13 +752,231 @@ code {
   }
 }
 
-/* ANIMATIONS ET EFFETS */
-// @keyframes stretchBar {
-//   from {
-//     width: 139px;
-//   }
+// Tablet RESPONSITIVITY --------------------------------
+@media (max-width: 1024px) {
+  body {
+    padding: 0;
+    margin: 0 auto;
+  }
 
-//   to {
-//     width: 240px;
-//   }
-// }
+  .Header {
+    max-width: 1024px;
+  }
+
+  // Presentation page
+  .Presentation {
+
+    .TitleBox1 {
+      display: flex;
+      justify-content: start;
+      padding-left: 100px;
+
+    }
+
+    .Information {
+      font-size: 28px;
+      padding: 20px;
+      width: 70%;
+    }
+  }
+
+  // A propos page
+  .AproposSection {
+    padding-top: 40px;
+
+    .PresentationApropos {
+
+      .TitleBox1 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+      }
+    }
+
+    .AproposSectionThree {
+      .AproposSectionThreeBox {
+        .TextSectionThree2 {
+          order: 4;
+        }
+      }
+    }
+  }
+}
+
+// Mobile RESPONSITIVITY --------------------------------
+@media (max-width: 767.98px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  // Header
+  .Header {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .logo {
+      padding-left: 0;
+    }
+
+    .Navigation-Box {
+      flex-wrap: wrap;
+    }
+  }
+
+  // Presentation page
+  .Presentation {
+    padding-top: 40px;
+
+    .TitleBox1 {
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+
+    }
+
+    .Information {
+      font-size: 28px;
+      padding: 20px;
+    }
+  }
+
+  // A propos page
+  .AproposSection {
+    padding-top: 40px;
+    font-size: 26px;
+
+    .PresentationApropos {
+      padding-bottom: 50px;
+
+      .TitleBox1 {
+        display: flex;
+        justify-content: center;
+
+      }
+
+      .InformationBox {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+        .ProfilePicture {
+          border-radius: 100%;
+          height: 340px;
+        }
+      }
+    }
+
+    .AproposSectionOne {
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      .greyLine {
+        display: none;
+      }
+    }
+
+    .AproposSectionTwo {
+      padding-bottom: 50px;
+      padding-top: 50px;
+      gap: 20px;
+
+      .LaptopPicture {
+        border-radius: 100%;
+        height: 322px;
+      }
+
+      .greyLine {
+        display: none;
+      }
+    }
+
+    .AproposSectionThree {
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      .AproposSectionThreeBox {
+
+        .SkillsPicture,
+        .BookPicture {
+          height: 290px;
+          width: 290px;
+          border-radius: 100%;
+        }
+
+        .TextSectionThree2 {
+          order: 4;
+        }
+      }
+    }
+  }
+
+  // Realisation page
+  .Realisation {
+    padding-top: 40px;
+
+    .TitleBox1 {
+      padding-left: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .CarrouselBox {
+      display: none;
+    }
+
+    .ProjetsSection {
+      margin-top: 30px;
+
+      .CategoriesAndTitle {
+        gap: 30px;
+
+        .TitleBox {
+          .Title {
+            font-size: 34px;
+            font-weight: 200;
+
+          }
+
+          .UnderlineTitle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .ContactPage {
+    padding-top: 40px;
+    font-size: 28px;
+
+    .TitleBox1 {
+      padding-left: 0;
+      justify-content: center;
+    }
+
+    .FormSection {
+      form {
+        .FirstAndLastName {
+
+          .LastNameBox,
+          .FirstNameBox {
+            width: 47%;
+          }
+        }
+      }
+    }
+  }
+
+  //404 page
+  .Error404Page {
+    .ErrorBox {
+      gap: 20px;
+
+      .Title {
+        font-size: 74px;
+      }
+    }
+  }
+}
