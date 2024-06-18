@@ -559,6 +559,105 @@ code {
   }
 }
 
+// COMPETENCES
+.CompetencesPage {
+  padding-top: 120px;
+  font-size: 36px;
+  text-align: center;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .TitleBox1 {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 150px;
+
+    .TitleBox2 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 30px;
+
+      .UnderlineTitle {
+        @include underLineTitle;
+        width: 170px;
+
+        &:hover {
+          width: 260px;
+        }
+      }
+    }
+  }
+
+  .CompetencesSection {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+    .SkillBox {
+      display: flex;
+      padding: 10px;
+      background-color: #929292;
+      border-radius: 30px;
+      width: 50%;
+      align-items: center;
+      min-height: 240px;
+      gap: 10px;
+
+      .LogoBox {
+        width: 260px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        border-radius: 20px 0 0 20px;
+
+        .LogoLangage {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+
+    }
+
+    .DescriptionBox {
+      background-color: #d8d8d8;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+      font-size: 26px;
+      width: 100%;
+      height: 100%;
+      gap: 10px;
+      border-radius: 0 20px 20px 0;
+
+      .DescriptionTitle {
+        font-size: 34px;
+        font-weight: 400;
+        font-style: italic;
+      }
+
+      .DescriptionTexte {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+
+
+
 // CONTACT
 
 .ContactPage {
@@ -861,9 +960,23 @@ code {
         flex-wrap: wrap-reverse;
         justify-content: center;
 
+        .InformationApropos {
+          padding-left: 10px;
+          padding-right: 10px;
+
+          .infoOne {
+            .greyLine {
+              width: 320px;
+            }
+          }
+        }
+
+
+
         .ProfilePicture {
           border-radius: 100%;
-          height: 340px;
+          height: 320px;
+          width: 320px;
         }
       }
     }
@@ -884,7 +997,8 @@ code {
 
       .LaptopPicture {
         border-radius: 100%;
-        height: 322px;
+        height: 290px;
+        width: 290px;
       }
 
       .greyLine {
@@ -944,6 +1058,18 @@ code {
           }
         }
       }
+
+      .ProjetsBox {
+        .Card {
+          width: 320px;
+          height: 320px;
+
+          .DescriptionCompetenceBox {
+            margin-top: -63%;
+          }
+        }
+
+      }
     }
   }
 
@@ -954,11 +1080,17 @@ code {
     .TitleBox1 {
       padding-left: 0;
       justify-content: center;
+
+    }
+
+    .greyLine {
+      width: 312px;
     }
 
     .FormSection {
       form {
         .FirstAndLastName {
+          justify-content: space-between;
 
           .LastNameBox,
           .FirstNameBox {
