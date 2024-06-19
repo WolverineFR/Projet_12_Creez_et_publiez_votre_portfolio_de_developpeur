@@ -54,12 +54,13 @@ function Apropos() {
           ></img>
           <div className="greyLine" data-aos="fade-up"></div>
           <div className="TextSectionTwo" data-aos="fade-up">
-            Au fil de mes études et de mes projets personnels, j'ai acquis une
-            solide base en langages de programmation tels que HTML, CSS et
-            JavaScript, ainsi qu'une compréhension approfondie des frameworks et
-            bibliothèques populaires comme React. Mon expérience pratique m'a
-            permis de maîtriser les principes du développement front-end et de
-            créer des interfaces utilisateur interactives et esthétiques.
+            Au fil de ma formation avec OpenClassrooms (Integrateur web) et de
+            mes projets personnels, j'ai acquis une solide base en langages de
+            programmation tels que HTML, CSS et JavaScript, ainsi qu'une
+            compréhension approfondie des frameworks et bibliothèques populaires
+            comme React. Mon expérience pratique m'a permis de maîtriser les
+            principes du développement front-end et de créer des interfaces
+            utilisateur interactives et esthétiques.
           </div>
           <div className="greyLine" data-aos="fade-up"></div>
         </div>

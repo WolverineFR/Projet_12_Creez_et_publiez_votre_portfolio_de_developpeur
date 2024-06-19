@@ -2,25 +2,25 @@
   {
     "id": "1",
     "name": "HTML",
-    "logo": "http://localhost:3000/images/HTML_logo.png",
+    "logo": "images/HTML_logo.png",
     "description": "Je maîtrise le HTML (HyperText Markup Language), qui est le fondement de la création de pages web. Avec HTML, je suis capable de structurer le contenu de manière sémantique et organisée, en utilisant les balises appropriées pour chaque type d'élément. Mon expertise en HTML me permet de créer des documents bien structurés, facilitant ainsi la compréhension et la maintenance du code."
   },
   {
     "id": "2",
     "name": "CSS",
-    "logo": "http://localhost:3000/images/CSS3_logo.png",
+    "logo": "images/CSS3_logo.png",
     "description": "Le CSS (Cascading Style Sheets) est un langage de style que j'utilise pour embellir et améliorer l'apparence des pages web. Grâce à mes compétences en CSS, je peux appliquer des mises en page sophistiquées, des styles de typographie variés, et des animations captivantes. Je maîtrise également les techniques avancées de CSS comme Flexbox et Grid pour créer des interfaces utilisateur réactives et modernes."
   },
   {
     "id": "3",
     "name": "Javascript",
-    "logo": "http://localhost:3000/images/Javascript_logo.png",
+    "logo": "images/Javascript_logo.png",
     "description": "JavaScript est un langage de programmation essentiel pour ajouter de l'interactivité aux sites web. Avec JavaScript, je peux rendre les pages web dynamiques et réactives, en manipulant le DOM, en gérant les événements et en communiquant avec des serveurs via des API. Mon expertise en JavaScript me permet de développer des fonctionnalités complexes, telles que des formulaires interactifs, des jeux en ligne, et des applications web complètes."
   },
   {
     "id": "4",
     "name": "React",
-    "logo": "http://localhost:3000/images/React_logo.png",
+    "logo": "images/React_logo.png",
     "description": "React est une bibliothèque JavaScript que j'utilise pour construire des interfaces utilisateur efficaces et réactives. Grâce à React, je suis capable de créer des composants réutilisables et de gérer l'état de l'application de manière fluide. Mon expérience avec React inclut le développement d'applications web modernes, l'optimisation des performances et l'intégration avec d'autres bibliothèques et frameworks pour une expérience utilisateur optimale."
   }
 ]

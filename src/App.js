@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -11,7 +11,7 @@ import Erreur404 from "./pages/Erreur404";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
