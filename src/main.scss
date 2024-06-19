@@ -149,11 +149,12 @@ code {
 /* PRESENTATION */
 
 .Presentation {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 150px;
   align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: calc(100vh - 100px);
+  flex-direction: column;
+
 
   .TitleBox1 {
     display: flex;
@@ -625,6 +626,7 @@ code {
       align-items: center;
       min-height: 240px;
       gap: 10px;
+      box-shadow: rgb(0 0 0 / 16%) 5px 5px 3px 0px;
 
       .LogoBox {
         width: 260px;
@@ -689,6 +691,7 @@ code {
     top: 38%;
     border-radius: 10px;
     border: 2px solid black;
+    z-index: 20;
 
   }
 
