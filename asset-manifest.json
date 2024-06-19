@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.f4cf74b5.css",
-    "main.js": "/static/js/main.da48e1e3.js",
-    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
-    "static/media/skills.webp": "/static/media/skills.fb615ed61c909137b058.webp",
-    "static/media/laptop-pic.webp": "/static/media/laptop-pic.1231a472fa2b82c79375.webp",
-    "static/media/book.webp": "/static/media/book.b7b9f51674c7c1b83b86.webp",
-    "static/media/profile.webp": "/static/media/profile.913823fac9ba4e373901.webp",
-    "index.html": "/index.html",
-    "main.f4cf74b5.css.map": "/static/css/main.f4cf74b5.css.map",
-    "main.da48e1e3.js.map": "/static/js/main.da48e1e3.js.map",
-    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f4cf74b5.css",
+    "main.js": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.15b7665c.js",
+    "static/js/453.1407b060.chunk.js": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/453.1407b060.chunk.js",
+    "static/media/skills.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/skills.fb615ed61c909137b058.webp",
+    "static/media/laptop-pic.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/laptop-pic.1231a472fa2b82c79375.webp",
+    "static/media/book.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/book.b7b9f51674c7c1b83b86.webp",
+    "static/media/profile.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/profile.913823fac9ba4e373901.webp",
+    "index.html": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/index.html",
+    "main.f4cf74b5.css.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f4cf74b5.css.map",
+    "main.15b7665c.js.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.15b7665c.js.map",
+    "453.1407b060.chunk.js.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4cf74b5.css",
-    "static/js/main.da48e1e3.js"
+    "static/js/main.15b7665c.js"
   ]
 }
