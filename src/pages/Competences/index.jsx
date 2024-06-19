@@ -7,7 +7,7 @@ function Competences() {
     <main>
       <div className="CompetencesPage">
         <div className="TitleBox1">
-          <div className="TitleBox2">
+          <div className="TitleBox2" data-aos="fade-right">
             <h1 className="Title">Compétences</h1>
             <div className="UnderlineTitle"></div>
           </div>

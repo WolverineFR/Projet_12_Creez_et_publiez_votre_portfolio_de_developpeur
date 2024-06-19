@@ -1,6 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 
 function Contact() {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   const [formData, setFormData] = useState({
     lastname: "",
     firstname: "",
@@ -55,20 +60,20 @@ function Contact() {
           </div>
         )}
         <div className="TitleBox1">
-          <div className="TitleBox2">
+          <div className="TitleBox2" data-aos="fade-right">
             <h1 className="Title">Contact</h1>
             <div className="UnderlineTitle"></div>
           </div>
         </div>
-        <div className="Information">
+        <div className="Information" data-aos="fade-up">
           Vous souhaitez me contacter pour plus d'informations ?
         </div>
-        <div className="greyLine"></div>
+        <div className="greyLine" data-aos="fade-up"></div>
         <div className="FormSection">
-          <div className="TitleForm">
+          <div className="TitleForm" data-aos="fade-up">
             Vous pouvez remplir le formulaire ci dessous
           </div>
-          <form onSubmit={alertMessage}>
+          <form data-aos="fade-up" onSubmit={alertMessage}>
             <div className="FirstAndLastName">
               <div className="LastNameBox">
                 <label htmlFor="lastname">Nom*</label>

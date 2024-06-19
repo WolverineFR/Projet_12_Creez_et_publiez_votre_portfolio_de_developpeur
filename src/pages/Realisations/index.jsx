@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "../../components/Slider/";
 import Projets from "../../data/projets.json";
 import Card from "../../components/Card";
+import AOS from "aos";
 
 function Realisations() {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   const [selectedCategory, setSelectedCategory] = useState("Tous");
 
   const filterProjects = () => {
@@ -28,7 +33,7 @@ function Realisations() {
     <main>
       <div className="Realisation">
         <div className="TitleBox1">
-          <div className="TitleBox2">
+          <div className="TitleBox2" data-aos="fade-right">
             <h1 className="Title">Réalisations</h1>
             <div className="UnderlineTitle"></div>
           </div>
@@ -36,11 +41,11 @@ function Realisations() {
         <Slider data={Projets} />
         <div className="ProjetsSection">
           <div className="CategoriesAndTitle">
-            <div className="TitleBox">
+            <div className="TitleBox" data-aos="fade-up">
               <h2 className="Title">Projets</h2>
               <div className="UnderlineTitle"></div>
             </div>
-            <div className="CategoriesBox">
+            <div className="CategoriesBox" data-aos="fade-up">
               <button
                 onClick={() => categoryClick("Tous")}
                 className={getCategoryButtonClass("Tous")}
@@ -67,7 +72,7 @@ function Realisations() {
               </button>
             </div>
           </div>
-          <div className="ProjetsBox">
+          <div className="ProjetsBox" data-aos="fade-up">
             {filteredProjects.map((data) => (
               <Card key={data.id} data={data} />
             ))}

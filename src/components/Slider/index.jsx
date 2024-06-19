@@ -19,7 +19,7 @@ const Slider = ({ data }) => {
   }, [next]);
 
   return (
-    <div className="CarrouselBox">
+    <div className="CarrouselBox" data-aos="fade-up">
       {data.map((data) => (
         <img
           className="CarrouselImg"
