@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f4cf74b5.css",
-    "main.js": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.29963a72.js",
+    "main.css": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f3d9696f.css",
+    "main.js": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.28325961.js",
     "static/js/453.1407b060.chunk.js": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/453.1407b060.chunk.js",
     "static/media/skills.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/skills.fb615ed61c909137b058.webp",
     "static/media/laptop-pic.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/laptop-pic.1231a472fa2b82c79375.webp",
     "static/media/book.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/book.b7b9f51674c7c1b83b86.webp",
     "static/media/profile.webp": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/media/profile.913823fac9ba4e373901.webp",
     "index.html": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/index.html",
-    "main.f4cf74b5.css.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f4cf74b5.css.map",
-    "main.29963a72.js.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.29963a72.js.map",
+    "main.f3d9696f.css.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/css/main.f3d9696f.css.map",
+    "main.28325961.js.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/main.28325961.js.map",
     "453.1407b060.chunk.js.map": "/Projet_12_Creez_et_publiez_votre_portfolio_de_developpeur/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4cf74b5.css",
-    "static/js/main.29963a72.js"
+    "static/css/main.f3d9696f.css",
+    "static/js/main.28325961.js"
   ]
 }
