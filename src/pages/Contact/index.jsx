@@ -6,6 +6,14 @@ function Contact() {
     AOS.init({ duration: 1500, once: true });
   }, []);
 
+  const [openMail, setOpenMail] = useState(true);
+  const [showMail, setShowMail] = useState(false);
+
+  const ClickMailBtn = () => {
+    setOpenMail(false);
+    setShowMail(true);
+  };
+
   const [formData, setFormData] = useState({
     lastname: "",
     firstname: "",
@@ -66,12 +74,26 @@ function Contact() {
           </div>
         </div>
         <div className="Information" data-aos="fade-up">
-          Vous souhaitez me contacter pour plus d'informations ?
+          Vous souhaitez me contacter pour plus d'informations ?<br></br>
+          Envoyez-moi un mail directement à cette adresse :
+        </div>
+        <div className="BtnMailBox" data-aos="fade-up">
+          {openMail && (
+            <button onClick={ClickMailBtn} className="MailBtn">
+              Afficher mail
+            </button>
+          )}
+          {showMail && (
+            <div className="mailBox" data-aos="fade-right">
+              <i class="fa-regular fa-envelope"></i>
+              <p className="textMail">maxence-cool@outlook.fr</p>
+            </div>
+          )}
         </div>
         <div className="greyLine" data-aos="fade-up"></div>
         <div className="FormSection">
           <div className="TitleForm" data-aos="fade-up">
-            Vous pouvez remplir le formulaire ci dessous
+            Ou alors vous pouvez remplir le formulaire ci dessous
           </div>
           <form data-aos="fade-up" onSubmit={alertMessage}>
             <div className="FirstAndLastName">
